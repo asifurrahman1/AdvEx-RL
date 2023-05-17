@@ -153,7 +153,7 @@ class Safety_Agent(object):
             log_pi_adv = log_pi_adv.float()
             log_pi_agent = log_pi_agent.float().unsqueeze(1)   
     
-            target_max_sqf_pi = -(log_pi_agent-(log_pi_adv+q_risk))  
+            target_max_sqf_pi = -(log_pi_agent-(q_risk-log_pi_adv))  
             safety_policy_loss = target_max_sqf_pi.mean() 
             
             self.safety_policy_optim.zero_grad()
