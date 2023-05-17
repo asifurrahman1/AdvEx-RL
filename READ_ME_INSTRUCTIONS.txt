@@ -10,7 +10,7 @@ After unzipping the given code zip file, the directory structure should be as fo
 -------------------------------------------------------------------------------------   
    Directory                        Information
 -------------------------------------------------------------------------------------
-- READ_ME.txt                       (Contains instruction to run relevant code)
+- READ_ME_INSTRUCTIONS.txt                       (Contains instruction to run relevant code)
 - AdvExRL_MuJoCo_code                     
     - AdvEx_RL                      (Contains all the code files relevant to AdvExRL)
         -adv_trainer.py             (Adversary trainer)
