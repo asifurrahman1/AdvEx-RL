@@ -5,10 +5,13 @@ This is the code repository of paper the paper "Adversarial Behavioral Explorati
 Follow the instruction written inside the **READ_ME_INSTRUCTIONS.txt** file
 
 #### AdvEx-RL agent under 100% adversarial attack:
-![](rendered_fig.gif =250x250)
+<img src="rendered_fig.gif" width="250" height="250"/>
+
+![](rendered_fig.gif)
 <br><br>
 
 #### SAC agent under 100% adversarial attack:
-![](SAC_rendered_fig.gif =250x250)
+<img src="SAC_rendered_fig.gif" width="250" height="250"/>
+![](SAC_rendered_fig.gif)
 
 
