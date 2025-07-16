@@ -1,4 +1,4 @@
-# 🧠 Adversarial Behavioral Exploration for Safe Reinforcement Learning (AdvEx-RL)
+# Adversarial Behavioral Exploration for Safe Reinforcement Learning (AdvEx-RL)
 
 This repository contains the official implementation of the paper:  
 📄 [Adversarial Behavioral Exploration for Safe Reinforcement Learning – IJCAI 2023](https://www.ijcai.org/proceedings/2023/54)
