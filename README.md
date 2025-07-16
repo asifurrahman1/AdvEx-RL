@@ -57,52 +57,42 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 Install MuJoCo and dependencies:
-
-bash
-Always show details
-
-Copy
+```bash
 pip install mujoco-py==2.0.2.13
 cd AdvExRL_MuJoCo_code
 pip install -r requirements.txt
+```
 Download pretrained models:
+- AdvEx-RL Models → extract into AdvEx_RL_Trained_Models
 
-AdvEx-RL Models → extract into AdvEx_RL_Trained_Models
+- RecoveryRL Models → extract into RecoveryRL/RecoveryRL_Model
 
-RecoveryRL Models → extract into RecoveryRL/RecoveryRL_Model
-
-⚙️ Safety Gym Setup
+### ⚙️ Safety Gym Setup
 Install dependencies:
-
-bash
-Always show details
-
-Copy
+```bash
 cd AdvExRL_SafetyGym_code
 pip install -r requirements.txt
+```
 Install Safety Gym:
 
-bash
-Always show details
-
-Copy
+```bash
 git clone https://github.com/openai/safety-gym
 cd safety-gym
 pip install -e .
+```
 Replace Safety Gym engine files:
-
-bash
-Always show details
-
-Copy
+```bash
 cp ../AdvExRL_SafetyGym_code/safety_gym_file_replace/engine.py safety_gym/envs/
 cp ../AdvExRL_SafetyGym_code/safety_gym_file_replace/world.py safety_gym/envs/
+```
 Download SafetyGym trained models → extract into AdvExRL_SafetyGym_code/Trained_models
 
-🚀 Experiments
+---
+
+## 🚀 Experiments
 All experiments can be reproduced using the pretrained models and the scripts in the repository.
 
-🔬 Robustness Experiments
+### 🔬 Robustness Experiments
 ID	Experiment Type	Script	Environment Examples
 1	Random attack	test_random_atk_experiment.py	maze, nav1, nav2
 2	AAA attack	test_aaa_atk_experiment.py	maze, nav1, nav2
@@ -115,45 +105,38 @@ ID	Experiment Type	Script	Environment Examples
 9	Render Random Perturbation	render_episode_with_random_atk.py	maze, nav1, nav2
 10	Render AAA Perturbation	render_episode_with_aaa_atk.py	maze, nav1, nav2
 
-🧪 SafetyGym Experiments
+### 🧪 SafetyGym Experiments
 ID	Experiment Type	Script	Envs
 11	Random attack	test_random.py	Safexp-CarGoal1-v0, Safexp-CarButton1-v0
 12	AAA attack	test_aaa.py	same
 
-🏋️‍♂️ Train From Scratch
-Train task agent:
-
-bash
-Always show details
-
-Copy
+### 🏋️‍♂️ Train From Scratch
+#### Train task agent:
+```bash
 python train_victim.py --configure-env [maze|nav1|nav2]
-Train adversary:
-
-bash
-Always show details
-
-Copy
+```
+#### Train adversary:
+```bash
 python train_adv.py --configure-env [maze|nav1|nav2]
-Configure paths inside AdvEx_RL_config to point to the above models.
-
-Train AdvEx-RL safety agent:
-
-bash
-Always show details
-
-Copy
+```
+Make sure to configure paths inside AdvEx_RL_config to point to the above models.
+#### Train AdvEx-RL safety agent:
+```bash
 python train_safety_policy.py --configure-env [maze|nav1|nav2]
-📊 Rendered Demonstrations
+```
+
+---
+
+## 📊 Rendered Demonstrations
 AdvEx-RL agent under 100% adversarial attack
 <img src="rendered_fig.gif" width="350" height="250"/>
 
 SAC agent under 100% adversarial attack
 <img src="SAC_rendered_fig.gif" width="350" height="250"/>
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-👤 Author
+## 👤 Author
 Md Asifur Rahman
 For questions, collaborations, or issues, feel free to open an issue or reach out directly.
