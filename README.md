@@ -8,7 +8,7 @@ AdvEx-RL introduces a novel adversarial training framework to improve safety and
 ---
 
 ## 📂 Repository Structure
-
+```
 AdvEx-RL/
 ├── AdvExRL_MuJoCo_code/
 │ ├── AdvEx_RL/ # Core AdvEx-RL agent implementation
@@ -30,11 +30,8 @@ AdvEx-RL/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
+```
 
-yaml
-Always show details
-
-Copy
 
 ---
 
