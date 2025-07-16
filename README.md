@@ -93,22 +93,26 @@ Download SafetyGym trained models → extract into AdvExRL_SafetyGym_code/Traine
 All experiments can be reproduced using the pretrained models and the scripts in the repository.
 
 ### 🔬 Robustness Experiments
-ID	Experiment Type	Script	Environment Examples
-1	Random attack	test_random_atk_experiment.py	maze, nav1, nav2
-2	AAA attack	test_aaa_atk_experiment.py	maze, nav1, nav2
-3	Random w/ changed dynamics	test_random_atk_experiment_changed_dynamics.py	--env-change 5.0/10.0/...
-4	AAA w/ changed dynamics	test_aaa_atk_experiment_changed_dynamics.py	same as above
-5	Ablation (Random)	test_ablation_random_atk.py	maze, nav1, nav2
-6	Ablation (AAA)	test_ablation_aaa_atk.py	maze, nav1, nav2
-7	Deadlock Detection	deadlock_detection_aaa.py	maze, nav1, nav2
-8	Threshold Sensitivity	test_safety_threshold_sensitivity.py	maze, nav1, nav2
-9	Render Random Perturbation	render_episode_with_random_atk.py	maze, nav1, nav2
-10	Render AAA Perturbation	render_episode_with_aaa_atk.py	maze, nav1, nav2
+| ID | Experiment Type            | Script                                           | Environment Examples      |
+| -- | -------------------------- | ------------------------------------------------ | ------------------------- |
+| 1  | Random attack              | `test_random_atk_experiment.py`                  | maze, nav1, nav2          |
+| 2  | AAA attack                 | `test_aaa_atk_experiment.py`                     | maze, nav1, nav2          |
+| 3  | Random w/ changed dynamics | `test_random_atk_experiment_changed_dynamics.py` | --env-change 5.0/10.0/... |
+| 4  | AAA w/ changed dynamics    | `test_aaa_atk_experiment_changed_dynamics.py`    | same as above             |
+| 5  | Ablation (Random)          | `test_ablation_random_atk.py`                    | maze, nav1, nav2          |
+| 6  | Ablation (AAA)             | `test_ablation_aaa_atk.py`                       | maze, nav1, nav2          |
+| 7  | Deadlock Detection         | `deadlock_detection_aaa.py`                      | maze, nav1, nav2          |
+| 8  | Threshold Sensitivity      | `test_safety_threshold_sensitivity.py`           | maze, nav1, nav2          |
+| 9  | Render Random Perturbation | `render_episode_with_random_atk.py`              | maze, nav1, nav2          |
+| 10 | Render AAA Perturbation    | `render_episode_with_aaa_atk.py`                 | maze, nav1, nav2          |
+
 
 ### 🧪 SafetyGym Experiments
-ID	Experiment Type	Script	Envs
-11	Random attack	test_random.py	Safexp-CarGoal1-v0, Safexp-CarButton1-v0
-12	AAA attack	test_aaa.py	same
+| ID | Experiment Type | Script           | Envs                                     |
+| -- | --------------- | ---------------- | ---------------------------------------- |
+| 11 | Random attack   | `test_random.py` | Safexp-CarGoal1-v0, Safexp-CarButton1-v0 |
+| 12 | AAA attack      | `test_aaa.py`    | same                                     |
+
 
 ### 🏋️‍♂️ Train From Scratch
 #### Train task agent:
