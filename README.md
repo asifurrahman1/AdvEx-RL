@@ -50,14 +50,12 @@ AdvEx-RL/
 2. Extract and export path:
 ```bash
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:[ROM-bin-Path]
+```
 Create and activate virtual environment:
-
-bash
-Always show details
-
-Copy
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 Install MuJoCo and dependencies:
 
 bash
