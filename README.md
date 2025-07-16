@@ -97,8 +97,8 @@ All experiments can be reproduced using the pretrained models and the scripts in
 | -- | -------------------------- | ------------------------------------------------ | ------------------------- |
 | 1  | Random attack              | `test_random_atk_experiment.py`                  | maze, nav1, nav2          |
 | 2  | AAA attack                 | `test_aaa_atk_experiment.py`                     | maze, nav1, nav2          |
-| 3  | Random w/ changed dynamics | `test_random_atk_experiment_changed_dynamics.py` | --env-change 5.0/10.0/... |
-| 4  | AAA w/ changed dynamics    | `test_aaa_atk_experiment_changed_dynamics.py`    | same as above             |
+| 3  | Random + changed dynamics  | `test_random_atk_experiment_changed_dynamics.py` | --env-change 5.0/10.0/... |
+| 4  | AAA + changed dynamics     | `test_aaa_atk_experiment_changed_dynamics.py`    | same as above             |
 | 5  | Ablation (Random)          | `test_ablation_random_atk.py`                    | maze, nav1, nav2          |
 | 6  | Ablation (AAA)             | `test_ablation_aaa_atk.py`                       | maze, nav1, nav2          |
 | 7  | Deadlock Detection         | `deadlock_detection_aaa.py`                      | maze, nav1, nav2          |
