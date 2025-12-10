@@ -142,6 +142,6 @@ SAC agent under 100% adversarial attack
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 ## 👤 Author
-Md Asifur Rahman
-Risal Shariar Shefin 
+- Md Asifur Rahman
+- Risal Shariar Shefin 
 For questions, collaborations, or issues, feel free to open an issue or reach out directly.
