@@ -143,4 +143,5 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 
 ## 👤 Author
 Md Asifur Rahman
+Risal Shariar Shefin 
 For questions, collaborations, or issues, feel free to open an issue or reach out directly.
